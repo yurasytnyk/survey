@@ -16,6 +16,7 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 ul,
@@ -91,22 +92,12 @@ h5 {
 /* One radio button per line */
 label {
   display: inline-block;
-  cursor: pointer;
   font-size: 1.5em;
   margin-top: 80px;
   margin-bottom: 50px;
   font-weight: bold;
   width: 18%;
-}
-label > input:checked:before {
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  width: 66px;
-  height: 52px;
-  background: url(../df666168a5f7d828f5f4.png) no-repeat center;
-  transform: translateX(-50%);
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
@@ -295,6 +286,16 @@ label > input:checked:before {
   transform: translate(-50%, -100%);
   transition: 0.5s ease all;
 }
+[type=radio]:checked::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 66px;
+  height: 52px;
+  background: url(../df666168a5f7d828f5f4.png) no-repeat center;
+  transform: translateX(-50%);
+}
 
 input[value="1"] + span::before {
   background-color: #ce6767;
@@ -316,8 +317,12 @@ input[value="5"] + span::before {
   background-color: #0ab04d;
 }
 
+.contacts__wrap {
+  display: flex;
+  justify-content: space-between;
+}
 .contacts__item + .contacts__item {
-  margin-top: 15px;
+  margin-left: 15px;
 }
 .contacts__label {
   margin: 0;
@@ -341,6 +346,7 @@ input[value="5"] + span::before {
   color: #333;
 }
 .contacts__message {
+  margin-top: 15px;
   resize: none;
 }
 
