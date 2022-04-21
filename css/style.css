@@ -39,7 +39,7 @@ img {
   height: auto;
 }
 
-[type=radio] {
+[type='radio'] {
   position: absolute;
   left: 50%;
   width: 1px;
@@ -216,7 +216,7 @@ label {
   color: #000;
   padding: 10px 30px;
   border: none;
-  font-family: "futura-pt", sans-serif;
+  font-family: 'futura-pt', sans-serif;
   font-weight: bold;
   font-size: 1em;
   text-transform: uppercase;
@@ -231,7 +231,7 @@ label {
   color: #fff;
   padding: 10px 30px;
   border: none;
-  font-family: "futura-pt", sans-serif;
+  font-family: 'futura-pt', sans-serif;
   font-weight: bold;
   font-size: 0.8em;
   text-transform: uppercase;
@@ -246,7 +246,7 @@ label {
   bottom: 100%;
   left: 50%;
   border: solid transparent;
-  content: " ";
+  content: ' ';
   height: 0;
   width: 0;
   position: absolute;
@@ -273,12 +273,12 @@ label {
   bottom: 50px;
 }
 
-[type=radio] {
-  visibility: hidden;
+[type='radio'] {
+  clip: rect(0, 0, 0, 0);
   cursor: pointer;
 }
-[type=radio] + span::before {
-  content: "";
+[type='radio'] + span::before {
+  content: '';
   position: absolute;
   left: 50%;
   top: -5px;
@@ -287,8 +287,8 @@ label {
   transform: translate(-50%, -100%);
   transition: 0.5s ease all;
 }
-[type=radio]:checked + span::after {
-  content: "";
+[type='radio']:checked + span::after {
+  content: '';
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -300,23 +300,23 @@ label {
   transform: translateX(-50%);
 }
 
-input[value="1"] + span::before {
+input[value='1'] + span::before {
   background-color: #ce6767;
 }
 
-input[value="2"] + span::before {
+input[value='2'] + span::before {
   background-color: #dd8055;
 }
 
-input[value="3"] + span::before {
+input[value='3'] + span::before {
   background-color: #d8a054;
 }
 
-input[value="4"] + span::before {
+input[value='4'] + span::before {
   background-color: #cee4aa;
 }
 
-input[value="5"] + span::before {
+input[value='5'] + span::before {
   background-color: #0ab04d;
 }
 
@@ -335,7 +335,8 @@ input[value="5"] + span::before {
   font-weight: normal;
   float: left;
 }
-.contacts__input, .contacts__message {
+.contacts__input,
+.contacts__message {
   width: 100%;
   padding: 10px;
   font-family: sans-serif;
@@ -345,7 +346,8 @@ input[value="5"] + span::before {
   border: 1px solid;
   outline: none;
 }
-.contacts__input::placeholder, .contacts__message::placeholder {
+.contacts__input::placeholder,
+.contacts__message::placeholder {
   color: #333;
 }
 .contacts__message {
@@ -381,7 +383,7 @@ input[value="5"] + span::before {
   background-color: #cd6666;
 }
 .quintiles__quintile::after {
-  content: "";
+  content: '';
   position: absolute;
   left: -20px;
   width: 15px;
@@ -445,7 +447,7 @@ input[value="5"] + span::before {
 
 .moreinfo > .tooltip:before,
 .moreinfo > .tooltip:after {
-  content: "";
+  content: '';
   position: absolute;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -494,7 +496,7 @@ input[value="5"] + span::before {
   height: 30px;
 }
 .scores__block::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 25%;
   left: -50px;
@@ -513,13 +515,16 @@ input[value="5"] + span::before {
 .radial-progress .circle .mask {
   clip: rect(0px, 100px, 100px, 50px);
 }
-.radial-progress .circle .mask, .radial-progress .circle .fill, .radial-progress .circle .shadow {
+.radial-progress .circle .mask,
+.radial-progress .circle .fill,
+.radial-progress .circle .shadow {
   width: 100px;
   height: 100px;
   position: absolute;
   border-radius: 50%;
 }
-.radial-progress .circle .mask, .radial-progress .circle .fill {
+.radial-progress .circle .mask,
+.radial-progress .circle .fill {
   transition: transform 2s;
 }
 .radial-progress .circle .mask .fill {
@@ -599,7 +604,7 @@ input[value="5"] + span::before {
   border-bottom: 5px dashed #000;
 }
 .chart .averageScore::before {
-  content: "";
+  content: '';
   display: block;
   height: 5px;
   border-left: solid 5px #000;
@@ -607,7 +612,7 @@ input[value="5"] + span::before {
   position: absolute;
 }
 .chart .averageScore::after {
-  content: "";
+  content: '';
   display: block;
   height: 5px;
   border-left: solid 5px #000;
@@ -618,7 +623,7 @@ input[value="5"] + span::before {
   border-bottom: 5px solid #c00;
 }
 .chart .topScore::before {
-  content: "";
+  content: '';
   display: block;
   height: 5px;
   border-left: solid 10px #c00;
@@ -626,7 +631,7 @@ input[value="5"] + span::before {
   position: absolute;
 }
 .chart .topScore::after {
-  content: "";
+  content: '';
   display: block;
   height: 5px;
   border-left: solid 10px #c00;
