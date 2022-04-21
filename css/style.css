@@ -53,6 +53,7 @@ img {
   height: 900px;
   text-align: center;
   transform-origin: left top;
+  overflow: hidden;
 }
 
 .section__title {
